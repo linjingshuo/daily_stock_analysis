@@ -139,7 +139,7 @@ jobs:
           LLM_DEEPSEEK_BASE_URL: https://api.deepseek.com/v1
           LLM_DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           LLM_DEEPSEEK_API_KEYS: ${{ secrets.LLM_DEEPSEEK_API_KEYS }}
-          LLM_DEEPSEEK_MODELS: deepseek-v4
+          LLM_DEEPSEEK_MODELS: deepseek-v4-flash
           LLM_DEEPSEEK_ENABLED: "true"
           LLM_DEEPSEEK_EXTRA_HEADERS: ${{ vars.LLM_DEEPSEEK_EXTRA_HEADERS || secrets.LLM_DEEPSEEK_EXTRA_HEADERS }}
 
