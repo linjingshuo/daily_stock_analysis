@@ -40,7 +40,7 @@ jobs:
   analyze:
     runs-on: ubuntu-latest
     # 添加超时限制，防止任务卡死
-    timeout-minutes: 20
+    timeout-minutes: 30
     
     steps:
       - name: 随机延迟（避免固定时间访问）
@@ -104,6 +104,10 @@ jobs:
           DEEPSEEK_BASE_URL: https://api.deepseek.com/v1
           DEEPSEEK_MODEL: deepseek-v4-flash
           LLM_PROVIDER: deepseek
+          LITELLM_STREAM: "false"
+          MAX_WORKERS: 1
+          LLM_REQUEST_DELAY: 2.0
+          LLM_TIMEOUT: 120
           
           # Anthropic / Claude
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
