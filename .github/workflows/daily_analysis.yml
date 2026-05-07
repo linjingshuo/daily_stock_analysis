@@ -108,6 +108,7 @@ jobs:
           MAX_WORKERS: 1
           LLM_REQUEST_DELAY: 2.0
           LLM_TIMEOUT: 120
+         
           
           # Anthropic / Claude
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
